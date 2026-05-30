@@ -1,0 +1,2 @@
+# Multi-Agent-Research-System
+streamlit langchain langchain-core langchain-mistralai python-dotenv tavily-python beautifulsoup4 requests rich lxml
