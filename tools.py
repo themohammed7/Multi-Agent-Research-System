@@ -5,9 +5,13 @@ from tavily import TavilyClient
 import os 
 from dotenv import load_dotenv
 from rich import print
+import os
+
+MISTRAL_API_KEY = st.secrets.get("MISTRAL_API_KEY", os.getenv("MISTRAL_API_KEY"))
+TAVILY_API_KEY = st.secrets.get("TAVILY_API_KEY", os.getenv("TAVILY_API_KEY"))
 load_dotenv()
 
-tavily = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
+tavily = TavilyClient(api_key=TAVILY_API_KEY)
 
 @tool
 def web_search(query : str) -> str:
