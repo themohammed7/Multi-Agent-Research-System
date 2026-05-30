@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 from tavily import TavilyClient
 import os 
 from rich import print
+import streamlit as st
 
 
 tavily = TavilyClient(
