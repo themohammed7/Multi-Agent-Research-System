@@ -5,7 +5,6 @@ from tavily import TavilyClient
 import os 
 from rich import print
 
-load_dotenv()
 
 tavily = TavilyClient(
     api_key=st.secrets["TAVILY_API_KEY"]
